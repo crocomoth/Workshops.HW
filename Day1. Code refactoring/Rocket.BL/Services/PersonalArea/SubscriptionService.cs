@@ -2,6 +2,7 @@
 using Rocket.DAL.Common.DbModels.User;
 using Rocket.DAL.Common.UoW;
 using System.Linq;
+using Rocket.BL.Common.Services.PersonalArea;
 
 namespace Rocket.BL.Services.ReleaseList
 {

@@ -159,8 +159,10 @@
     <Compile Include="Models\UserRoles\Role.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IPermissionService.cs" />
+    <Compile Include="Services\PersonalArea\ISubscriptionService.cs" />
     <Compile Include="Services\ReleaseList\IEpisodeService.cs" />
-    <Compile Include="Services\ReleaseList\IGenreService.cs" />
+    <Compile Include="Services\ReleaseList\IMusicGenreService.cs" />
+    <Compile Include="Services\ReleaseList\ITvGenreService.cs" />
     <Compile Include="Services\ReleaseList\ITvSeriesDetailedInfoService.cs" />
     <Compile Include="Services\UserPayment\IUserPaymentService.cs" />
     <Compile Include="Services\User\IUserAccountLevelService.cs" />

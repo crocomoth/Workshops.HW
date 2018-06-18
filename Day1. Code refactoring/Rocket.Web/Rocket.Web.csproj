@@ -369,8 +369,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DebugController.cs" />
     <Compile Include="Controllers\LoggerController.cs" />
-    <Compile Include="Controllers\ReleaseList\GenreController.cs" />
+    <Compile Include="Controllers\ReleaseList\MusicGenreController.cs" />
     <Compile Include="Controllers\ReleaseList\SubscriptionController.cs" />
+    <Compile Include="Controllers\ReleaseList\TvGenreController.cs" />
     <Compile Include="Controllers\UserPayments\IPNController.cs" />
     <Compile Include="Controllers\UserPayments\UserPaymentsController.cs" />
     <Compile Include="Extensions\PrincipalExtensions.cs" />

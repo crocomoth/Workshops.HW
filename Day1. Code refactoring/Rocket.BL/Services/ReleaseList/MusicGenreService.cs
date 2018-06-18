@@ -1,20 +1,16 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using AutoMapper;
 using Rocket.BL.Common.DtoModels.ReleaseList;
 using Rocket.BL.Common.Services.ReleaseList;
 using Rocket.DAL.Common.UoW;
-using System.Collections.Generic;
 
 namespace Rocket.BL.Services.ReleaseList
 {
-    public class GenreService : BaseService, IGenreService
+    public class MusicGenreService : BaseService, IMusicGenreService
     {
-        public GenreService(IUnitOfWork unitOfWork) : base(unitOfWork)
+        public MusicGenreService(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
-        }
 
-        public IEnumerable<GenreDto> GetTvSeriesGenres()
-        {
-            return Mapper.Map<IEnumerable<GenreDto>>(_unitOfWork.GenreRepository.Get());
         }
 
         public IEnumerable<GenreDto> GetMusicGenres()

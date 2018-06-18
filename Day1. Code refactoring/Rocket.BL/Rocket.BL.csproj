@@ -125,7 +125,6 @@
     <Compile Include="Services\PersonalArea\ChangeEmailManagerService.cs" />
     <Compile Include="Services\PersonalArea\ChangeGenreManagerService.cs" />
     <Compile Include="Services\ReleaseList\EpisodeService.cs" />
-    <Compile Include="Services\ReleaseList\GenreService.cs" />
     <Compile Include="Services\ReleaseList\GuestReleaseListService.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -133,6 +132,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\PersonalArea\SubscriptionService.cs" />
+    <Compile Include="Services\ReleaseList\MusicGenreService.cs" />
+    <Compile Include="Services\ReleaseList\TvGenreService.cs" />
     <Compile Include="Services\ReleaseList\TvSeriesDetailedInfoService.cs" />
     <Compile Include="Services\UserPaymentService\UserPaymentService.cs" />
     <Compile Include="Services\UserServices\PermissionService.cs" />
