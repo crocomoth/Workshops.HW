@@ -1,13 +1,14 @@
-﻿using FluentValidation;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using FluentValidation;
 using Rocket.BL.Common.Models.PersonalArea;
+using Rocket.BL.Common.Models.UserData;
 using Rocket.BL.Common.Services.PersonalArea;
 using Rocket.BL.Properties;
 using Rocket.DAL.Common.UoW;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace Rocket.BL.Services.PersonalArea
+namespace Rocket.BL.Services.PersonalServices
 {
     public class ChangeGenreManagerService : BaseService, IGenreManager
     {

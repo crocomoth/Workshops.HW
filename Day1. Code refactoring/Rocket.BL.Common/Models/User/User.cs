@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Rocket.BL.Common.Models.Enums;
 using Rocket.BL.Common.Models.UserRoles;
 
 namespace Rocket.BL.Common.Models.User
@@ -37,13 +38,13 @@ namespace Rocket.BL.Common.Models.User
         /// Возвращает или задает статус аккаунта
         /// (активирован, не активирован, деактивирован, забанен и так далее).
         /// </summary>
-        public AccountStatus AccountStatus { get; set; }
+        public AccountStatusEnum AccountStatus { get; set; }
 
         /// <summary>
         /// Возвращает или задает уровень пользователя
         /// (пока что это - обычный и премиум пользователь).
         /// </summary>
-        public AccountLevel AccountLevel { get; set; }
+        public AccountLevelEnum AccountLevel { get; set; }
 
         /// <summary>
         /// Возвращает или задает коллекцию ролей пользователя.

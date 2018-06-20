@@ -33,15 +33,15 @@ namespace Rocket.BL.Services.ReleaseList
         /// </summary>
         /// <param name="id">Идентификатор музыкального релиза</param>
         /// <returns>Экземпляр музыкального релиза</returns>
-        public Music GetMusic(int id)
+        public MusicRelease GetMusic(int id)
         {
-            //return Mapper.Map<Music>(
+            //return Mapper.Map<MusicRelease>(
             //_unitOfWork.MusicRepository.GetById(id));
 
-            var model = Mapper.Map<Music>(
+            var model = Mapper.Map<MusicRelease>(
                 _unitOfWork.MusicRepository.Get(
                         f => f.Id == id,
-                        includeProperties: $"{nameof(Music.Genres)},{nameof(Music.MusicTracks)},{nameof(Music.Musicians)}")
+                        includeProperties: $"{nameof(MusicRelease.Genres)},{nameof(MusicRelease.MusicTracks)},{nameof(MusicRelease.Musicians)}")
                     ?.FirstOrDefault());
 
             return model;
@@ -52,11 +52,11 @@ namespace Rocket.BL.Services.ReleaseList
         /// Добавляет заданный музыкальный релиз в хранилище данных
         /// и возвращает идентификатор добавленного музыкального релиза.
         /// </summary>
-        /// <param name="music">Экземпляр музыкального релиза для добавления</param>
+        /// <param name="musicRelease">Экземпляр музыкального релиза для добавления</param>
         /// <returns>Идентификатор музыкального релиза</returns>
-        public int AddMusic(Music music)
+        public int AddMusic(MusicRelease musicRelease)
         {
-            var dbMusic = Mapper.Map<DbMusic>(music);
+            var dbMusic = Mapper.Map<DbMusic>(musicRelease);
             _unitOfWork.MusicRepository.Insert(dbMusic);
             _unitOfWork.SaveChanges();
             return dbMusic.Id;
@@ -66,10 +66,10 @@ namespace Rocket.BL.Services.ReleaseList
         /// <summary>
         /// Обновляет информацию заданного музыкального релиза в хранилище данных
         /// </summary>
-        /// <param name="music">Экземпляр музыкального релиза для обновления</param>
-        public void UpdateMusic(Music music)
+        /// <param name="musicRelease">Экземпляр музыкального релиза для обновления</param>
+        public void UpdateMusic(MusicRelease musicRelease)
         {
-            var dbMusic = Mapper.Map<DbMusic>(music);
+            var dbMusic = Mapper.Map<DbMusic>(musicRelease);
             _unitOfWork.MusicRepository.Update(dbMusic);
             _unitOfWork.SaveChanges();
         }
@@ -91,7 +91,7 @@ namespace Rocket.BL.Services.ReleaseList
         /// </summary>
         /// <param name="filter">фильтр</param>
         /// <returns>bool</returns>
-        public bool MusicExists(Expression<Func<Music, bool>> filter)
+        public bool MusicExists(Expression<Func<MusicRelease, bool>> filter)
         {
             return _unitOfWork.MusicRepository.Get(
                            Mapper.Map<Expression<Func<DbMusic, bool>>>(filter))
@@ -106,7 +106,7 @@ namespace Rocket.BL.Services.ReleaseList
         /// <param name="startDate">Начальная дата</param>
         /// <param name="endDate">Конечная дата</param>
         /// <returns>Коллекция музыкальных релизов</returns>
-        public IEnumerable<Music> GetMusicByDates(DateTime startDate, DateTime endDate, string userId = null)
+        public IEnumerable<MusicRelease> GetMusicByDates(DateTime startDate, DateTime endDate, string userId = null)
         {
             Expression<Func<DbMusic, bool>> filter = f =>
                 f.ReleaseDate >= startDate && f.ReleaseDate <= endDate;
@@ -119,7 +119,7 @@ namespace Rocket.BL.Services.ReleaseList
 
             var musics = _unitOfWork.MusicRepository.Get(filter);
 
-            return Mapper.Map<IEnumerable<Music>>(musics);
+            return Mapper.Map<IEnumerable<MusicRelease>>(musics);
         }
 
         /// <summary>
@@ -142,7 +142,7 @@ namespace Rocket.BL.Services.ReleaseList
             var pageInfo = new MusicPageInfo();
             pageInfo.TotalItemsCount = _unitOfWork.MusicRepository.ItemsCount(filter);
             pageInfo.TotalPagesCount = (int)Math.Ceiling((double)pageInfo.TotalItemsCount / pageSize);
-            pageInfo.PageItems = Mapper.Map<IEnumerable<DbMusic>, IEnumerable<Music>>(
+            pageInfo.PageItems = Mapper.Map<IEnumerable<DbMusic>, IEnumerable<MusicRelease>>(
                 _unitOfWork.MusicRepository.GetPage(
                     pageSize,
                     pageNumber,
@@ -195,7 +195,7 @@ namespace Rocket.BL.Services.ReleaseList
             var pageInfo = new MusicPageInfo();
             pageInfo.TotalItemsCount = _unitOfWork.MusicRepository.ItemsCount(filter);
             pageInfo.TotalPagesCount = (int)Math.Ceiling((double)pageInfo.TotalItemsCount / pageSize);
-            pageInfo.PageItems = Mapper.Map<IEnumerable<DbMusic>, IEnumerable<Music>>(
+            pageInfo.PageItems = Mapper.Map<IEnumerable<DbMusic>, IEnumerable<MusicRelease>>(
                 _unitOfWork.MusicRepository.GetPage(
                     pageSize,
                     pageNumber,

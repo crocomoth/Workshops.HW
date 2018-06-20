@@ -1,16 +1,17 @@
-﻿using AutoMapper;
+﻿using System.Linq;
+using System.Text.RegularExpressions;
+using AutoMapper;
 using FluentValidation;
 using Rocket.BL.Common.Models.PersonalArea;
+using Rocket.BL.Common.Models.UserData;
 using Rocket.BL.Common.Services.PersonalArea;
 using Rocket.BL.Properties;
 using Rocket.DAL.Common.DbModels.DbPersonalArea;
 using Rocket.DAL.Common.DbModels.User;
 using Rocket.DAL.Common.UoW;
 using Rocket.DAL.Identity;
-using System.Linq;
-using System.Text.RegularExpressions;
 
-namespace Rocket.BL.Services.PersonalArea
+namespace Rocket.BL.Services.PersonalServices
 {
     public class PersonalDataService : BaseService, IPersonalData
     {

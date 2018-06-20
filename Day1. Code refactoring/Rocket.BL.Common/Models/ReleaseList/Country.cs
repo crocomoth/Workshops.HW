@@ -14,5 +14,7 @@
         /// Возвращает или задает название страны
         /// </summary>
         public string Name { get; set; }
+
+        public string RouteToFlagImage { get; set; }
     }
 }

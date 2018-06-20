@@ -1,10 +1,9 @@
-﻿using Rocket.BL.Common.Services.ReleaseList;
+﻿using System.Linq;
+using Rocket.BL.Common.Services.PersonalArea;
 using Rocket.DAL.Common.DbModels.User;
 using Rocket.DAL.Common.UoW;
-using System.Linq;
-using Rocket.BL.Common.Services.PersonalArea;
 
-namespace Rocket.BL.Services.ReleaseList
+namespace Rocket.BL.Services.PersonalServices
 {
     public class SubscriptionService : BaseService, ISubscriptionService
     {

@@ -2,7 +2,7 @@
 
 namespace Rocket.BL.Common.Models.Pagination
 {
-    public class MusicPageInfo : PageInfo<Music>
+    public class MusicPageInfo : PageInfo<MusicRelease>
     {
     }
 }

@@ -10,12 +10,12 @@ using Rocket.BL.Common.Services.User;
 using Rocket.BL.Common.Services.UserPayment;
 using Rocket.BL.Services;
 using Rocket.BL.Services.Notification;
-using Rocket.BL.Services.PersonalArea;
 using Rocket.BL.Services.ReleaseList;
 using Rocket.BL.Services.User;
 using Rocket.BL.Services.UserPaymentService;
 using Rocket.BL.Validators.User;
 using System.Collections.Generic;
+using Rocket.BL.Services.PersonalServices;
 
 namespace Rocket.BL
 {

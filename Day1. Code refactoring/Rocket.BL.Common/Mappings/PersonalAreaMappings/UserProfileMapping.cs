@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Rocket.BL.Common.Models.PersonalArea;
+using Rocket.BL.Common.Models.UserData;
 using Rocket.DAL.Common.DbModels.DbPersonalArea;
 
 namespace Rocket.BL.Common.Mappings.PersonalAreaMappings

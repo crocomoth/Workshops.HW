@@ -1,4 +1,4 @@
-﻿namespace Rocket.BL.Common.Models.PersonalArea
+﻿namespace Rocket.BL.Common.Models.UserData
 {
     public class MusicGenre
     {

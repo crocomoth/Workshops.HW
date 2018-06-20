@@ -5,7 +5,7 @@ using Rocket.BL.Common.Models.Subscription;
 
 namespace Rocket.BL.Common.Models.ReleaseList
 {
-    public class Music : Subscribable
+    public class MusicRelease : Subscribable
     {
         /// <summary>
         /// Возвращает или задает дату выхода релиза

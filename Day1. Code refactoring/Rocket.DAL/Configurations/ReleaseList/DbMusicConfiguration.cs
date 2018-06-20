@@ -10,7 +10,7 @@ namespace Rocket.DAL.Configurations.ReleaseList
     {
         public DbMusicConfiguration()
         {
-            ToTable("Music");
+            ToTable("MusicRelease");
 
             Property(f => f.PosterImagePath)
                 .IsOptional()

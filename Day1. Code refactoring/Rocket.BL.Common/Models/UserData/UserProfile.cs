@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Rocket.BL.Common.Models.PersonalArea;
 
-namespace Rocket.BL.Common.Models.PersonalArea
+namespace Rocket.BL.Common.Models.UserData
 {
     public class UserProfile
     {

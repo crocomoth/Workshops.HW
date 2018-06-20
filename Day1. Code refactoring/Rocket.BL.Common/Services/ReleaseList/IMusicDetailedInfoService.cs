@@ -17,7 +17,7 @@ namespace Rocket.BL.Common.Services.ReleaseList
         /// </summary>
         /// <param name="id">Идентификатор музыкального релиза</param>
         /// <returns>Экземпляр музыкального релиза</returns>
-        Music GetMusic(int id);
+        MusicRelease GetMusic(int id);
 
         /// <summary>
         /// Возвращает страницу музыкальных релизов с заданным номером и размером,
@@ -45,15 +45,15 @@ namespace Rocket.BL.Common.Services.ReleaseList
         /// Добавляет заданный музыкальный релиз в хранилище данных
         /// и возвращает идентификатор добавленного музыкального релиза.
         /// </summary>
-        /// <param name="music">Экземпляр музыкального релиза для добавления</param>
+        /// <param name="musicRelease">Экземпляр музыкального релиза для добавления</param>
         /// <returns>Идентификатор музыкального релиза</returns>
-        int AddMusic(Music music);
+        int AddMusic(MusicRelease musicRelease);
 
         /// <summary>
         /// Обновляет информацию заданного музыкального релиза в хранилище данных
         /// </summary>
-        /// <param name="music">Экземпляр музыкального релиза для обновления</param>
-        void UpdateMusic(Music music);
+        /// <param name="musicRelease">Экземпляр музыкального релиза для обновления</param>
+        void UpdateMusic(MusicRelease musicRelease);
 
         /// <summary>
         /// Удаляет музыкальный релиз с заданным идентификатором из хранилища данных.
@@ -66,7 +66,7 @@ namespace Rocket.BL.Common.Services.ReleaseList
         /// </summary>
         /// <param name="filter">Лямбда-выражение определяющее фильтр для поиска музыки</param>
         /// <returns>Возвращает <see langword="true"/>, если музыкальный релиз существует в хранилище данных</returns>
-        bool MusicExists(Expression<Func<Music, bool>> filter);
+        bool MusicExists(Expression<Func<MusicRelease, bool>> filter);
 
         /// <summary>
         /// Возвращает коллекцию музыкальных релизов с датой выхода
@@ -76,6 +76,6 @@ namespace Rocket.BL.Common.Services.ReleaseList
         /// <param name="endDate">Конечная дата</param>
         /// <param name="userId">Идентификатор пользователя</param>
         /// <returns>Коллекция музыкальных релизов</returns>
-        IEnumerable<Music> GetMusicByDates(DateTime startDate, DateTime endDate, string userId = null);
+        IEnumerable<MusicRelease> GetMusicByDates(DateTime startDate, DateTime endDate, string userId = null);
     }
 }

@@ -122,8 +122,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Services\Notification\MailNotificationService.cs" />
-    <Compile Include="Services\PersonalArea\ChangeEmailManagerService.cs" />
-    <Compile Include="Services\PersonalArea\ChangeGenreManagerService.cs" />
+    <Compile Include="Services\PersonalServices\ChangeEmailManagerService.cs" />
+    <Compile Include="Services\PersonalServices\ChangeGenreManagerService.cs" />
     <Compile Include="Services\ReleaseList\EpisodeService.cs" />
     <Compile Include="Services\ReleaseList\GuestReleaseListService.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -131,7 +131,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Services\PersonalArea\SubscriptionService.cs" />
+    <Compile Include="Services\PersonalServices\SubscriptionService.cs" />
     <Compile Include="Services\ReleaseList\MusicGenreService.cs" />
     <Compile Include="Services\ReleaseList\TvGenreService.cs" />
     <Compile Include="Services\ReleaseList\TvSeriesDetailedInfoService.cs" />
@@ -142,7 +142,7 @@
     <Compile Include="Services\ReleaseList\FilmDetailedInfoService.cs" />
     <Compile Include="Services\BaseService.cs" />
     <Compile Include="Services\ReleaseList\MusicDetailedInfoService.cs" />
-    <Compile Include="Services\PersonalArea\PersonalDataService.cs" />
+    <Compile Include="Services\PersonalServices\PersonalDataService.cs" />
     <Compile Include="Services\User\UserAccountLevelService.cs" />
     <Compile Include="Services\User\UserAccountStatusService.cs" />
     <Compile Include="Services\InfoLogService.cs" />

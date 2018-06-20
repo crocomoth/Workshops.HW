@@ -30,7 +30,7 @@ namespace Rocket.BL.Tests.ReleaseList.FakeData
         /// <summary>
         /// Возвращает генератор данных о музыкальных релизах
         /// </summary>
-        public Faker<Music> MusicFaker { get; }
+        public Faker<MusicRelease> MusicFaker { get; }
 
         /// <summary>
         /// Возвращает коллекцию сгенерированных музыкантов
@@ -46,7 +46,7 @@ namespace Rocket.BL.Tests.ReleaseList.FakeData
         /// <summary>
         /// Возвращает коллекцию сгенерированных музыкальных релизов
         /// </summary>
-        public List<Music> Music { get; }
+        public List<MusicRelease> Music { get; }
 
         /// <summary>
         /// Создает новый экземпляр сгенерированных данных о музыкальных релизах
@@ -66,7 +66,7 @@ namespace Rocket.BL.Tests.ReleaseList.FakeData
             MusicGenreFaker = fakeMusicGenresData.MusicGenreFaker;
             MusicGenre = fakeMusicGenresData.MusicGenres;
 
-            MusicFaker = new Faker<Music>()
+            MusicFaker = new Faker<MusicRelease>()
                 .RuleFor(m => m.Id, f => f.IndexFaker)
                 .RuleFor(m => m.Title, f => string.Join(" ", f.Lorem.Words(2)))
                 .RuleFor(m => m.ReleaseDate,

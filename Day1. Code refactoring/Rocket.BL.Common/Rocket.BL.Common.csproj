@@ -94,6 +94,10 @@
     <Compile Include="Mappings\UserMappingProfile\UserRoleMappingProfile\PermissionMappingProfile.cs" />
     <Compile Include="Mappings\UserMappingProfile\UserRoleMappingProfile\RoleMappingProfile.cs" />
     <Compile Include="Mappings\UserPayment\UserPaymentMappingProfile.cs" />
+    <Compile Include="Models\Enums\AccountLevelEnum.cs" />
+    <Compile Include="Models\Enums\AccountStatusEnum.cs" />
+    <Compile Include="Models\Enums\GenderEnum.cs" />
+    <Compile Include="Models\Enums\HowToCallEnum.cs" />
     <Compile Include="Models\Notification\BillingNotification.cs" />
     <Compile Include="Models\Notification\ConfirmationNotification.cs" />
     <Compile Include="Models\Notification\CustomNotification.cs" />
@@ -146,7 +150,7 @@
     <Compile Include="Models\ReleaseList\Country.cs" />
     <Compile Include="Models\ReleaseList\Episode.cs" />
     <Compile Include="Models\ReleaseList\Film.cs" />
-    <Compile Include="Models\ReleaseList\Music.cs" />
+    <Compile Include="Models\ReleaseList\MusicRelease.cs" />
     <Compile Include="Models\ReleaseList\MusicGenre.cs" />
     <Compile Include="Models\ReleaseList\Musician.cs" />
     <Compile Include="Models\ReleaseList\Person.cs" />

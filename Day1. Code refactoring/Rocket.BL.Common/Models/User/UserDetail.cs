@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Rocket.BL.Common.Models.Enums;
 using Rocket.BL.Common.Models.ReleaseList;
 
 namespace Rocket.BL.Common.Models.User
@@ -38,12 +39,12 @@ namespace Rocket.BL.Common.Models.User
         /// <summary>
         /// Задает или возвращает пол пользователя.
         /// </summary>
-        public Gender Gender { get; set; }
+        public GenderEnum Gender { get; set; }
 
         /// <summary>
         /// Задает или возвращает сведения о том, как обращаться к пользователю.
         /// </summary>
-        public HowToCall HowToCall { get; set; }
+        public HowToCallEnum HowToCall { get; set; }
 
         /// <summary>
         /// Задает или возвращает коллекцию телефонных номеров пользователя.

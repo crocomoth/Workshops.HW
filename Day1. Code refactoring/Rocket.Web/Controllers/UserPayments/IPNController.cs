@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web.Http;
+using Rocket.BL.Common.Models.Enums;
 using Rocket.BL.Common.Models.User;
 using Rocket.BL.Common.Services.User;
 using Rocket.BL.Common.Services.UserPayment;
@@ -110,9 +111,10 @@ namespace Rocket.Web.Controllers.UserPayments
 
                 if ((payment.Result == "Completed") && (payment.Summ == 3))
                 {
-                    var accountLevel = new AccountLevel();
+                    /*var accountLevel = new AccountLevel();
                     accountLevel.Id = 2;
-                    accountLevel.Name = "Премиум";
+                    accountLevel.Name = "Премиум";*/
+                    var accountLevel = AccountLevelEnum.Premium;
                     _userAccountLevelService.SetUserAccountLevel(int.Parse(payment.UserId), accountLevel);
                 }
             }

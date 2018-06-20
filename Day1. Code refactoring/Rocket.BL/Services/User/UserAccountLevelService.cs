@@ -1,5 +1,7 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using AutoMapper;
+using Rocket.BL.Common.Models.Enums;
 using Rocket.BL.Common.Models.User;
 using Rocket.BL.Common.Services.User;
 using Rocket.DAL.Common.DbModels.User;
@@ -27,7 +29,7 @@ namespace Rocket.BL.Services.User
         /// </summary>
         /// <param name="id">Идентификатор пользователя.</param>
         /// <returns>Уровень аккаунта пользователя.</returns>
-        public AccountLevel GetUserAccountLevel(int id)
+        public AccountLevelEnum GetUserAccountLevel(int id)
         {
             var isUserExist = _unitOfWork.UserRepository.Get(u => u.Id == id.ToString())
                 .FirstOrDefault() != null;
@@ -35,7 +37,7 @@ namespace Rocket.BL.Services.User
             // Проверка на наличие пользователя в хранилище.
             if (!isUserExist)
             {
-                return null;
+                throw new Exception("user not found");
             }
 
             var user = Mapper.Map<Rocket.BL.Common.Models.User.User>(
@@ -49,7 +51,7 @@ namespace Rocket.BL.Services.User
         ///// </summary>
         ///// <param name="id">Идентификатор пользователя.</param>
         ///// <param name="accountLevel">Задаваемый уровень аккаунта.</param>
-        public void SetUserAccountLevel(int id, AccountLevel accountLevel)
+        public void SetUserAccountLevel(int id, AccountLevelEnum accountLevel)
         {
             var isUserExist = _unitOfWork.UserRepository.Get(u => u.Id == id.ToString())
                                   .FirstOrDefault() != null;

@@ -14,7 +14,7 @@ namespace Rocket.BL.Common.Mappings.ReleaseList
     {
         public MusicMappingProfile()
         {
-            CreateMap<Music, DbMusic>()
+            CreateMap<MusicRelease, DbMusic>()
                 .IncludeBase<Subscribable, SubscribableEntity>()
                 .ForMember(dest => dest.ReleaseDate, opt => opt.MapFrom(src => src.ReleaseDate))
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Title))

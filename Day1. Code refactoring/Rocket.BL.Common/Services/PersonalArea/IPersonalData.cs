@@ -1,4 +1,5 @@
 ﻿using Rocket.BL.Common.Models.PersonalArea;
+using Rocket.BL.Common.Models.UserData;
 
 namespace Rocket.BL.Common.Services.PersonalArea
 {

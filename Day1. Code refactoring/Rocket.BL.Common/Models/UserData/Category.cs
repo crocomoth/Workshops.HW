@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Rocket.BL.Common.Models.PersonalArea
+namespace Rocket.BL.Common.Models.UserData
 {
     /// <summary>
     /// Класс, содержащий данные о категории (фильм, сериал или музыка).
