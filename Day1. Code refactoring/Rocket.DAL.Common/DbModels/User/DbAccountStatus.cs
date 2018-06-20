@@ -5,6 +5,7 @@ namespace Rocket.DAL.Common.DbModels.User
     /// <summary>
     /// Представляет модель хранения данных о статусе аккаунта.
     /// </summary>
+    /// TODO convert to enum (REFACTOR)
     public class DbAccountStatus
     {
         /// <summary>

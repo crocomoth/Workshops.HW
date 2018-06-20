@@ -5,6 +5,7 @@ namespace Rocket.DAL.Common.DbModels.User
     /// <summary>
     /// Представляет модель хранения сведений о том, как обращаться к пользователю.
     /// </summary>
+    /// //TODO ENUM THIS
     public class DbHowToCall
     {
         /// <summary>

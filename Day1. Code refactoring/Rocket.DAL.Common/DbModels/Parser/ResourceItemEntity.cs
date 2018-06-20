@@ -6,7 +6,8 @@ namespace Rocket.DAL.Common.DbModels.Parser
     /// <summary>
     /// Элемент ресурса
     /// </summary>
-    public class ResourceItemEntity
+    /// TODO is this needed? REFACTOR
+    public class ResourceItemEntity : IBaseEntity
     {
         /// <summary>
         /// Id

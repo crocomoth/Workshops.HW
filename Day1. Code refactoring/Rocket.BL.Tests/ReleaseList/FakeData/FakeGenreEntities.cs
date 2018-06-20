@@ -38,7 +38,7 @@ namespace Rocket.BL.Tests.ReleaseList.FakeData
             foreach (var genreEntity in GenreEntities)
             {
                 genreEntity.CategoryCode = genreEntity.Category.Code;
-                genreEntity.Category.ListGenre.Add(genreEntity);
+                genreEntity.Category.Genres.Add(genreEntity);
             }
         }
     }

@@ -5,7 +5,8 @@ namespace Rocket.DAL.Common.DbModels.User
     /// <summary>
     /// Представляет модель хранения данных об уровне аккаунта пользователя.
     /// </summary>
-    public class DbAccountLevel
+    /// TODO convert to enum? REFACTOR
+    public class DbAccountLevel : IBaseEntity
     {
         /// <summary>
         /// Возвращает или задает уникальный идентификатор уровня аккаунта пользователя.

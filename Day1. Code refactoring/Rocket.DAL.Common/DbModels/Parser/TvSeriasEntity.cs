@@ -78,7 +78,7 @@ namespace Rocket.DAL.Common.DbModels.Parser
         ///// </summary>
         //public ICollection<PersonEntity> ListActor
         //{
-        //    get { return ListPerson.Where(i => i.PersonTypeCode == (int)PersonType.Actor).ToList(); }
+        //    get { return Persons.Where(i => i.PersonTypeCode == (int)PersonType.Actor).ToList(); }
         //}
 
         ///// <summary>
@@ -86,7 +86,7 @@ namespace Rocket.DAL.Common.DbModels.Parser
         ///// </summary>
         //public ICollection<PersonEntity> ListDirector
         //{
-        //    get { return ListPerson.Where(i => i.PersonTypeCode == (int)PersonType.Director).ToList(); }
+        //    get { return Persons.Where(i => i.PersonTypeCode == (int)PersonType.Director).ToList(); }
         //}
 
         ///// <summary>
@@ -94,7 +94,7 @@ namespace Rocket.DAL.Common.DbModels.Parser
         ///// </summary>
         //public ICollection<PersonEntity> ListProducer
         //{
-        //    get { return ListPerson.Where(i => i.PersonTypeCode == (int)PersonType.Producer).ToList(); }
+        //    get { return Persons.Where(i => i.PersonTypeCode == (int)PersonType.Producer).ToList(); }
         //}
 
         ///// <summary>
@@ -102,7 +102,7 @@ namespace Rocket.DAL.Common.DbModels.Parser
         ///// </summary>
         //public ICollection<PersonEntity> ListWriter
         //{
-        //    get { return ListPerson.Where(i => i.PersonTypeCode == (int)PersonType.Writer).ToList(); }
+        //    get { return Persons.Where(i => i.PersonTypeCode == (int)PersonType.Writer).ToList(); }
         //}
 
         /// <summary>

@@ -19,7 +19,7 @@ namespace Rocket.DAL.Configurations.Parser
                 .HasColumnName("CategoryCode");
 
             HasRequired(p => p.Category)
-                .WithMany(r => r.ListGenre)
+                .WithMany(r => r.Genres)
                 .HasForeignKey(p => p.CategoryCode);
         }
     }

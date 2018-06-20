@@ -8,7 +8,7 @@ namespace Rocket.DAL.Common.DbModels.User
     /// <summary>
     /// Представляет модель хранения детальных данных о пользователе.
     /// </summary>
-    public class DbUserDetail
+    public class DbUserDetail : IBaseEntity
     {
         /// <summary>
         /// Возвращает или задает уникальный идентификатор дополнительной информации пользователя.

@@ -29,11 +29,6 @@ namespace Rocket.BL.Common.Models.ReleaseList
         public string PosterImageUrl { get; set; }
 
         /// <summary>
-        /// Исполнитель
-        /// </summary>
-        public string Artist { get; set; }
-
-        /// <summary>
         /// Возвращает или задает продолжительность музыкального релиза
         /// </summary>
         public TimeSpan Duration { get; set; }

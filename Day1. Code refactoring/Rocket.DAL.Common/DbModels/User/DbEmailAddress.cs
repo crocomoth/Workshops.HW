@@ -5,7 +5,7 @@ namespace Rocket.DAL.Common.DbModels.User
     /// <summary>
     /// Представляет модель хранения данных о адресах электронной почты дополнительной информации пользователя.
     /// </summary>
-    public class DbEmailAddress
+    public class DbEmailAddress : IBaseEntity
     {
         /// <summary>
         /// Задает или возвращает уникальный идентификатор адреса электронной почты дополнительной информации пользователя.
@@ -17,6 +17,7 @@ namespace Rocket.DAL.Common.DbModels.User
         /// </summary>
         public string Address { get; set; }
 
+        //TODO is this needed? Rethink(REFACTOR)
         /// <summary>
         /// Задает или возвращает коллекцию дополнительной информации пользователя,
         /// к которой относится этот адрес электронной почты.

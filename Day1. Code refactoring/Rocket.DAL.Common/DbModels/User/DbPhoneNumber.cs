@@ -5,7 +5,7 @@ namespace Rocket.DAL.Common.DbModels.User
     /// <summary>
     /// Представляет модель хранения данных о телефонных номерах дополнительной информации пользователя.
     /// </summary>
-    public class DbPhoneNumber
+    public class DbPhoneNumber : IBaseEntity
     {
         /// <summary>
         /// Задает или возвращает уникальный идентификатор телефонного номера дополнительной информации пользователя.

@@ -3,7 +3,7 @@
     /// <summary>
     /// Параметры парсера
     /// </summary>
-    public class ParserSettingsEntity
+    public class ParserSettingsEntity : IBaseEntity
     {
         /// <summary>
         /// Id

@@ -7,7 +7,7 @@ namespace Rocket.DAL.Common.DbModels.Subscription
     /// <summary>
     /// Представляет базовую модель ресурсов, на которые возможна подписка
     /// </summary>
-    public abstract class SubscribableEntity
+    public abstract class SubscribableEntity : IBaseEntity
     {
         /// <summary>
         /// Уникальный идентификатор ресурса

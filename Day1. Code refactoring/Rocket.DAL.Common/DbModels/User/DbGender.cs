@@ -5,6 +5,7 @@ namespace Rocket.DAL.Common.DbModels.User
     /// <summary>
     /// Представляет модель хранения пола дополнительной информации пользователя.
     /// </summary>
+    /// //TODO ENum this
     public class DbGender
     {
         /// <summary>

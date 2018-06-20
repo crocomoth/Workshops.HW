@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbModels\BaseEntity.cs" />
     <Compile Include="DbModels\DbPersonalArea\DbEmail.cs" />
     <Compile Include="DbModels\DbPersonalArea\DbUserProfile.cs" />
     <Compile Include="DbModels\DbUserPayment\DbUserPayment.cs" />

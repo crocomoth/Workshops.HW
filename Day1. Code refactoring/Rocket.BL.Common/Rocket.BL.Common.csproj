@@ -106,8 +106,8 @@
     <Compile Include="Models\Pagination\PageInfo.cs" />
     <Compile Include="Models\Pagination\ReleasesPageInfo.cs" />
     <Compile Include="Models\Pagination\TvSeriesPageInfo.cs" />
-    <Compile Include="Models\PersonalArea\Email.cs" />
-    <Compile Include="Models\PersonalArea\MusicGenre.cs" />
+    <Compile Include="Models\UserData\Email.cs" />
+    <Compile Include="Models\UserData\MusicGenre.cs" />
     <Compile Include="Models\ReleaseList\BaseRelease.cs" />
     <Compile Include="Models\ReleaseList\Category.cs" />
     <Compile Include="Models\ReleaseList\PersonType.cs" />
@@ -141,8 +141,8 @@
     <Compile Include="Services\PersonalArea\IEmailManager.cs" />
     <Compile Include="Services\PersonalArea\IGenreManager.cs" />
     <Compile Include="Services\PersonalArea\IPersonalData.cs" />
-    <Compile Include="Models\PersonalArea\Category.cs" />
-    <Compile Include="Models\PersonalArea\Genre.cs" />
+    <Compile Include="Models\UserData\Category.cs" />
+    <Compile Include="Models\UserData\Genre.cs" />
     <Compile Include="Models\ReleaseList\Country.cs" />
     <Compile Include="Models\ReleaseList\Episode.cs" />
     <Compile Include="Models\ReleaseList\Film.cs" />
@@ -154,7 +154,7 @@
     <Compile Include="Models\ReleaseList\MusicTrack.cs" />
     <Compile Include="Models\ReleaseList\TVSeries.cs" />
     <Compile Include="Models\ReleaseList\Genre.cs" />
-    <Compile Include="Models\PersonalArea\UserProfile.cs" />
+    <Compile Include="Models\UserData\UserProfile.cs" />
     <Compile Include="Models\UserRoles\Permission.cs" />
     <Compile Include="Models\UserRoles\Role.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

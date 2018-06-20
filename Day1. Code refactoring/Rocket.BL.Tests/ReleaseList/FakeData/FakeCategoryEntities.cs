@@ -13,19 +13,19 @@ namespace Rocket.BL.Tests.ReleaseList.FakeData
                 {
                     Code = 1,
                     Name = "Сериал",
-                    ListGenre = new List<GenreEntity>()
+                    Genres = new List<GenreEntity>()
                 },
                 new CategoryEntity()
                 {
                     Code = 2,
                     Name = "Фильм",
-                    ListGenre = new List<GenreEntity>()
+                    Genres = new List<GenreEntity>()
                 },
                 new CategoryEntity()
                 {
                     Code = 3,
                     Name = "Музыкальный трэк",
-                    ListGenre = new List<GenreEntity>()
+                    Genres = new List<GenreEntity>()
                 },
             };
         }

@@ -13,25 +13,25 @@ namespace Rocket.BL.Tests.ReleaseList.FakeData
                 {
                     Code = 1,
                     Name = "Актер",
-                    ListPerson = new List<PersonEntity>()
+                    Persons = new List<PersonEntity>()
                 },
                 new PersonTypeEntity()
                 {
                     Code = 2,
                     Name = "Режиссер",
-                    ListPerson = new List<PersonEntity>()
+                    Persons = new List<PersonEntity>()
                 },
                 new PersonTypeEntity()
                 {
                     Code = 3,
                     Name = "Продюсер",
-                    ListPerson = new List<PersonEntity>()
+                    Persons = new List<PersonEntity>()
                 },
                 new PersonTypeEntity()
                 {
                     Code = 4,
                     Name = "Сценарист",
-                    ListPerson = new List<PersonEntity>()
+                    Persons = new List<PersonEntity>()
                 }
             };
         }

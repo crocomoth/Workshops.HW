@@ -41,7 +41,7 @@ namespace Rocket.BL.Tests.ReleaseList.FakeData
             foreach (var personEntity in PersonEntities)
             {
                 personEntity.PersonTypeCode = personEntity.PersonType.Code;
-                personEntity.PersonType.ListPerson.Add(personEntity);
+                personEntity.PersonType.Persons.Add(personEntity);
             }
         }
     }

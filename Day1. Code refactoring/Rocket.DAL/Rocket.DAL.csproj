@@ -210,6 +210,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\EfRepository.cs" />
     <Compile Include="Repositories\Notification\DbCustomMessageRepository.cs" />
     <Compile Include="Repositories\Notification\DbEmailTemplateRepository.cs" />
     <Compile Include="Repositories\Notification\DbGuestBillingMessageRepository.cs" />

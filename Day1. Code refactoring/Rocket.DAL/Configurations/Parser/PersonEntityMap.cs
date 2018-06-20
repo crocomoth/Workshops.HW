@@ -38,7 +38,7 @@ namespace Rocket.DAL.Configurations.Parser
                 .HasColumnName("PersonTypeCode");
 
             HasRequired(p => p.PersonType)
-                .WithMany(r => r.ListPerson)
+                .WithMany(r => r.Persons)
                 .HasForeignKey(p => p.PersonTypeCode);
         }
     }
